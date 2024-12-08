@@ -4,15 +4,13 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Chuollan - Homepage</title>
-        <link rel="stylesheet" href="assets/css/style.css">
-        <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-        <link rel="stylesheet" href="plugins/flatpickr/css/flatpickr.min.css">
+        <title>Chuollan - Header</title>
+        <link rel="stylesheet" href="../assets/css/style.css">
+        <link rel="stylesheet" href="../plugins/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
     </head>
 
     <body>
-
         <header>
             <nav class="nav-top-mini">
                 <div class="container d-flex justify-content-between">
@@ -105,91 +103,6 @@
                 </div>
             </nav>
         </header>
-
-        <main class="homepage">
-            <section class="hero-banner">
-                <img src="img/hero-banner-homepage.png" alt="A vehicle displayed in a scenic background">
-                <div class="bg-over-dark"></div>
-                <div class="container">
-                    <div class="content-banner">
-                        <span class="main-sms">Find Your Perfect Car</span>
-                        <h1>Looking for a vehicle?</h1>
-                        <h1>You’re in the perfect spot.</h1>
-                        <div class="mini-benefit pt-4 d-flex">
-                            <div class="gp-script d-flex align-content-center">
-                                <div class="tick-icon">
-                                    <i class="fa-solid fa-check"></i>
-                                </div>
-                                <p class="ps-3">High quality at a low cost.</p>
-                            </div>
-                            <div class="gp-script d-flex align-content-center ps-3">
-                                <div class="tick-icon">
-                                    <i class="fa-solid fa-check"></i>
-                                </div>
-                                <p class="ps-3">Premium services</p>
-                            </div>
-                            <div class="gp-script d-flex align-content-center ps-3  ">
-                                <div class="tick-icon">
-                                    <i class="fa-solid fa-check"></i>
-                                </div>
-                                <p class="ps-3">24/7 roadside support.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <div class="box-search-advance">
-                <div class="container">
-                    <div class="box-search">
-                        <div class="row w-100">
-                            <div class="col-4">
-                                <div class="group-search">
-                                    <div class="input-search">
-                                        <span class="gp-icon-search"></span>
-                                        <select style="box-shadow: none;" class="form-select index-select"
-                                            aria-label="Default select example">
-                                            <option selected="" disabled="">Select car type</option>
-                                            <option value="1">SUV</option>
-                                            <option value="2">Sport Car</option>
-                                            <option value="3">Sedan</option>
-                                            <option value="4">Pick Up</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-3">
-                                <div class="group-search">
-                                    <div class="input-search">
-                                        <input type="text" class="form-control flatpickr-input select-date"
-                                            id="pickDate" placeholder="Pick Up Date" aria-label="Username"
-                                            aria-describedby="addon-wrapping" readonly="readonly">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-3">
-                                <div class="group-search">
-                                    <div class="input-search">
-                                        <input type="text" class="form-control flatpickr-input select-date"
-                                            id="pickDate" placeholder="Return Date" aria-label="Username"
-                                            aria-describedby="addon-wrapping" readonly="readonly">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-2"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </main>
-
-
-        <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <script src="plugins/flatpickr/js/flatpickr.js"></script>
-        <script>
-            flatpickr(".select-date", {
-
-            });
-        </script>
     </body>
 
 </html>

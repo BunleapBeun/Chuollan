@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Responsive Card Slider</title>
+        <link rel="stylesheet" href="/plugins/swiper-js/css/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="/plugins/bootstrap/css/bootstrap-icons.min.css">
+    </head>
+    <style>
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #EFEFEF;
+        }
+
+        .slide-container {
+            max-width: 1120px;
+            width: 100%;
+            padding: 40px 0;
+        }
+
+        .slide-content {
+            margin: 0 40px;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        .card {
+            width: 320px;
+            border-radius: 10px !important;
+            background-color: #FFFFFF;
+            padding: 10px;
+        }
+
+        .swiper-navBtn {
+            color: #6E93F7 !important;
+            transition: all .3s ease;
+        }
+
+        .swiper-navBtn:hover {
+            color: #4070F4 !important;
+        }
+
+        .swiper-navBtn::before,
+        .swiper-navBtn::after {
+            font-size: 40px !important;
+        }
+
+        .swiper-button-next {
+            right: 0 !important;
+        }
+
+        .swiper-button-prev {
+            left: 0 !important;
+        }
+
+        .swiper-pagination-bullet {
+            background-color: #6E93F7 !important;
+            opacity: 1 !important;
+        }
+
+        .swiper-pagination-bullet-active {
+            background-color: #4070F4 !important;
+        }
+
+        @media screen and (max-width: 768px) {
+            .slide-content {
+                margin: 0 10px;
+            }
+
+            .swiper-navBtn {
+                display: none !important;
+            }
+        }
+
+        .client-pf {
+            width: 70px;
+            height: 70px;
+            border-radius: 70px;
+            overflow: hidden;
+        }
+
+        .client-pf img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+    </style>
+
+    <body>
+        <div class="slide-container swiper">
+            <div class="slide-content">
+                <div class="card-wrapper swiper-wrapper">
+                    <div class="card swiper-slide">
+                        <div class="d-flex align-items-center flex-row">
+                            <div class="client-pf">
+                                <img src="/img/about-us/member-image-ex.jpg" alt="">
+                            </div>
+                            <p class="m-0 text-danger">Alex Kase</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-button-next swiper-navBtn"></div>
+            <div class="swiper-button-prev swiper-navBtn"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <script src="/plugins/swiper-js/js/swiper-bundle.min.js"></script>
+        <script src="/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script>
+            var swiper = new Swiper(".slide-content", {
+                slidesPerView: 3,
+                spaceBetween: 25,
+                loop: true,
+                centerSlide: true,
+                fade: true,
+                grabCursor: true,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                    dynamicBullets: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+
+                breakpoints: {
+                    0: { slidesPerView: 1, },
+                    520: { slidesPerView: 2 },
+                    950: { slidesPerView: 3 },
+                },
+            })
+        </script>
+    </body>
+
+</html>
