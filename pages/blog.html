@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chuollan - Blog</title>
+        <link rel="stylesheet" href="/assets/css/style.css">
+        <link rel="stylesheet" href="/plugins/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+        <link rel="stylesheet" href="/plugins/flatpickr/css/flatpickr.min.css">
+        <link rel="stylesheet" href="/plugins/swiper-js/css/swiper-bundle.min.css">
+        <!-- <link rel="stylesheet" href="/plugins/aos/css/aos.css"> -->
+    </head>
+
+    <body>
+
+        <header>
+            <nav class="nav-top-mini">
+                <div class="container d-flex justify-content-between">
+                    <div class="contact-info d-flex">
+                        <div class="phone-call d-flex align-items-center pe-4">
+                            <i class="fa-solid fa-phone"></i>
+                            <p class="m-0 ps-2">+885-97-230-3456</p>
+                        </div>
+                        <div class="email-info d-flex align-items-center">
+                            <i class="fa-solid fa-envelope"></i>
+                            <p class="m-0 ps-2">coullansupport@comp.com</p>
+                        </div>
+                    </div>
+                    <div class="social-media">
+                        <a href="#" class="text-decoration-none text-white fs-5 me-2"><i
+                                class="fa-brands fa-square-facebook"></i></a>
+                        <a href="#" class="text-decoration-none text-white fs-5 me-2"><i
+                                class="fa-brands fa-square-instagram"></i></a>
+                        <a href="#" class="text-decoration-none text-white fs-5 me-2"><i
+                                class="fa-brands fa-square-twitter"></i></a>
+                        <a href="#" class="text-decoration-none text-white fs-5"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </nav>
+            <nav class="navbar navbar-expand-lg p-1">
+                <div class="container">
+                    <a class="navbar-brand" href="/index.html"><img src="../img/Chullan-Circle-Logo.png"
+                            alt="logo-chuollan"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto ms-auto mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link">Service <i class="fa-solid fa-chevron-down"></i></a>
+                                <ul class="menu-dropdown">
+                                    <li class="nav-item">
+                                        <a href="/pages/driver_rent.html"
+                                            class="nav-link p-0 d-flex justify-content-between align-items-center">Driver
+                                            Rent <i class="fa-solid fa-chevron-right ps-5"></i></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="/pages/car_loan.html"
+                                            class="nav-link p-0 w-100 d-flex justify-content-between align-items-center">Car
+                                            Loan <i class="fa-solid fa-chevron-right"></i></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link">Vehicle <i class="fa-solid fa-chevron-down"></i></a>
+                                <ul class="menu-dropdown">
+                                    <li class="nav-item">
+                                        <a href="/pages/car_listing.html"
+                                            class="nav-link p-0 d-flex justify-content-between align-items-center">SUV
+                                            <i class="fa-solid fa-chevron-right ps-5"></i></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="/pages/car_listing.html"
+                                            class="nav-link p-0 w-100 d-flex justify-content-between align-items-center">Sport
+                                            Car <i class="fa-solid fa-chevron-right"></i></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="/pages/car_listing.html"
+                                            class="nav-link p-0 w-100 d-flex justify-content-between align-items-center">Sedan
+                                            <i class="fa-solid fa-chevron-right"></i></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="/pages/car_listing.html"
+                                            class="nav-link p-0 w-100 d-flex justify-content-between align-items-center">Pickup
+                                            <i class="fa-solid fa-chevron-right"></i></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/pages/pricing.html">Pricing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/pages/blog.html">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/pages/career.html">Career</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/pages/faq.html">FAQ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/pages/contact_us.html">Contact us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/pages/about_us.html">About us</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex">
+                            <a href="/pages/sign_in.html" class="btn-chuollan me-3 text-decoration-none"
+                                type="button">Sign In</a>
+                            <a href="/pages/sign_up.html" class="btn-chuollan text-decoration-none" type="button">Sign
+                                Up</a>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="blog">
+            <section class="hero-banner">
+                <div class="container h-100">
+                    <div class="w-100 h-100 d-flex align-items-center justify-content-center flex-column"
+                        data-aos="fade-up">
+                        <h1 class="m-0 link-text">Blogs</h1>
+                        <div class="d-flex align-items-center justify-content-center pt-3">
+                            <a href="/index.html"
+                                class="text-decoration-none text-white fs-5 me-3 link-text-banner fw-medium">Home</a>
+                            <i class="fa-solid fa-angles-right text-white fs-5 pt-1"></i>
+                            <a href="/pages/about_us.html"
+                                class="text-decoration-none text-white fs-5 ms-3 link-text-banner fw-medium">Blog</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="blog-list py-5">
+                <div class="container">
+                    <div class="row g-4">
+                        <div class="col-4">
+                            <div class="card">
+                                <a href="/pages/blog_detail.html" type="button" class="blog-imag">
+                                    <img src="/img/blog/post-1.jpg" alt="">
+                                </a>
+                                <div class="blog-status d-flex align-items-center mt-3 text-secondary">
+                                    <i class="fa-regular fa-calendar-days"></i> <p class="m-0 fw-medium ms-2">August 5, 2024</p>
+                                </div>
+                                <a href="/pages/blog_detail.html" class="blog-title">Top tips for booking your car rental: what you need to know</a>
+                                <a href="/pages/blog_detail.html" class="d-flex align-items-center text-decoration-none blog-btn">Read More <div class="btn-arrow"><i
+                                            class="fa-solid fa-arrow-right"></i></div></a>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card">
+                                <a href="/pages/blog_detail.html" type="button" class="blog-imag">
+                                    <img src="/img/blog/post-2.jpg" alt="">
+                                </a>
+                                <div class="blog-status d-flex align-items-center mt-3 text-secondary">
+                                    <i class="fa-regular fa-calendar-days"></i> <p class="m-0 fw-medium ms-2">August 5, 2024</p>
+                                </div>
+                                <a href="/pages/blog_detail.html" class="blog-title">Exploring your rental car options: sedan, suv, or convertible?</a>
+                                <a href="/pages/blog_detail.html" class="d-flex align-items-center text-decoration-none blog-btn">Read More <div class="btn-arrow"><i
+                                            class="fa-solid fa-arrow-right"></i></div></a>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card">
+                                <a href="/pages/blog_detail.html" type="button" class="blog-imag">
+                                    <img src="/img/blog/post-3.jpg" alt="">
+                                </a>
+                                <div class="blog-status d-flex align-items-center mt-3 text-secondary">
+                                    <i class="fa-regular fa-calendar-days"></i> <p class="m-0 fw-medium ms-2">August 5, 2024</p>
+                                </div>
+                                <a href="/pages/blog_detail.html" class="blog-title">The pros and cons of renting a car vs. using rideshare services</a>
+                                <a href="/pages/blog_detail.html" class="d-flex align-items-center text-decoration-none blog-btn">Read More <div class="btn-arrow"><i
+                                            class="fa-solid fa-arrow-right"></i></div></a>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card">
+                                <a href="/pages/blog_detail.html" type="button" class="blog-imag">
+                                    <img src="/img/blog/post-4.jpg" alt="">
+                                </a>
+                                <div class="blog-status d-flex align-items-center mt-3 text-secondary">
+                                    <i class="fa-regular fa-calendar-days"></i> <p class="m-0 fw-medium ms-2">August 5, 2024</p>
+                                </div>
+                                <a href="/pages/blog_detail.html" class="blog-title">Why you should consider renting a luxury car for your next trip</a>
+                                <a href="/pages/blog_detail.html" class="d-flex align-items-center text-decoration-none blog-btn">Read More <div class="btn-arrow"><i
+                                            class="fa-solid fa-arrow-right"></i></div></a>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card">
+                                <a href="/pages/blog_detail.html" type="button" class="blog-imag">
+                                    <img src="/img/blog/post-5.jpg" alt="">
+                                </a>
+                                <div class="blog-status d-flex align-items-center mt-3 text-secondary">
+                                    <i class="fa-regular fa-calendar-days"></i> <p class="m-0 fw-medium ms-2">August 5, 2024</p>
+                                </div>
+                                <a href="/pages/blog_detail.html" class="blog-title">What to expect when renting a car for the first time</a>
+                                <a href="/pages/blog_detail.html" class="d-flex align-items-center text-decoration-none blog-btn">Read More <div class="btn-arrow"><i
+                                            class="fa-solid fa-arrow-right"></i></div></a>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card">
+                                <a href="/pages/blog_detail.html" type="button" class="blog-imag">
+                                    <img src="/img/blog/post-6.jpg" alt="">
+                                </a>
+                                <div class="blog-status d-flex align-items-center mt-3 text-secondary">
+                                    <i class="fa-regular fa-calendar-days"></i> <p class="m-0 fw-medium ms-2">August 5, 2024</p>
+                                </div>
+                                <a href="/pages/blog_detail.html" class="blog-title">The best apps for managing your car rental experience</a>
+                                <a href="/pages/blog_detail.html" class="d-flex align-items-center text-decoration-none blog-btn">Read More <div class="btn-arrow"><i
+                                            class="fa-solid fa-arrow-right"></i></div></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-3">
+                        <p class="m-0 fw-bold fs-5 mb-2">About Company</p>
+                        <p class="m-0">
+                            At <span class="link-text fw-medium">CHOULLAN</span>, we are committed to providing a
+                            hassle-free car rental experience
+                            with a focus
+                            on exceptional customer service and affordable rates.
+                        </p>
+                        <p class="m-0 mt-3 fw-medium fs-5">
+                            Follow Us
+                        </p>
+                        <ul class="social-media-list">
+                            <li class="social-item">
+                                <a href="#" class="social-link"><i class="fa-brands fa-square-facebook"></i></a>
+                            </li>
+                            <li class="social-item">
+                                <a href="#" class="social-link"><i class="fa-brands fa-square-instagram"></i></a>
+                            </li>
+                            <li class="social-item">
+                                <a href="#" class="social-link"><i class="fa-brands fa-square-twitter"></i></a>
+                            </li>
+                            <li class="social-item">
+                                <a href="#" class="social-link"><i class="fa-brands fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-3">
+                        <p class="m-0 fs-5 fw-bold mb-2">Quick Links</p>
+                        <div class="row">
+                            <div class="col-6">
+                                <ul class="list-quick">
+                                    <li class="quick-item">
+                                        <a href="/index.html" class="quick-link"> <i
+                                                class="fa-solid fa-angle-right"></i> Home</a>
+                                    </li>
+                                    <li class="quick-item">
+                                        <a href="/pages/pricing.html" class="quick-link"> <i
+                                                class="fa-solid fa-angle-right"></i> Pricing</a>
+                                    </li>
+                                    <li class="quick-item">
+                                        <a href="/pages/blog.html" class="quick-link"> <i
+                                                class="fa-solid fa-angle-right"></i> Blog</a>
+                                    </li>
+                                    <li class="quick-item">
+                                        <a href="/pages/career.html" class="quick-link"> <i
+                                                class="fa-solid fa-angle-right"></i> Career</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-6">
+                                <ul class="list-quick">
+                                    <li class="quick-item">
+                                        <a href="/pages/faq.html" class="quick-link"> <i
+                                                class="fa-solid fa-angle-right"></i> FAQ</a>
+                                    </li>
+                                    <li class="quick-item">
+                                        <a href="/pages/about_us.html" class="quick-link"> <i
+                                                class="fa-solid fa-angle-right"></i> About us</a>
+                                    </li>
+                                    <li class="quick-item">
+                                        <a href="/pages/contact_us.html" class="quick-link"> <i
+                                                class="fa-solid fa-angle-right"></i> Contact us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <p class="m-0 fs-5 fw-bold mb-2">Services</p>
+                        <ul class="list-quick">
+                            <li class="quick-item">
+                                <a href="/pages/driver_rent.html" class="quick-link"> <i
+                                        class="fa-solid fa-angle-right"></i> Driver Rent</a>
+                            </li>
+                            <li class="quick-item">
+                                <a href="/pages/car_loan.html" class="quick-link"> <i
+                                        class="fa-solid fa-angle-right"></i> Car Loan</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <p class="m-0 fs-5 fw-bold mb-2">Vehicles</p>
+                        <ul class="list-quick">
+                            <li class="quick-item">
+                                <a href="/pages/car_listing.html" class="quick-link"> <i
+                                        class="fa-solid fa-angle-right"></i> SUV</a>
+                            </li>
+                            <li class="quick-item">
+                                <a href="/pages/car_listing.html" class="quick-link"> <i
+                                        class="fa-solid fa-angle-right"></i> Sport Car</a>
+                            </li>
+                            <li class="quick-item">
+                                <a href="/pages/car_listing.html" class="quick-link"> <i
+                                        class="fa-solid fa-angle-right"></i> Sedan</a>
+                            </li>
+                            <li class="quick-item">
+                                <a href="/pages/car_listing.html" class="quick-link"> <i
+                                        class="fa-solid fa-angle-right"></i> Pickup</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-3">
+                        <p class="m-0 fw-bold fs-5 mb-2">Contact Us</p>
+                        <ul class="info-contact p-0 list-unstyled">
+                            <li class="contact-item d-flex align-items-center">
+                                <i class="fa-solid fa-map-location-dot me-3"></i>
+                                <p class="m-0">Russian Federation Blvd (110), Phnom Penh 120404</p>
+                            </li>
+                            <li class="contact-item d-flex align-items-center">
+                                <i class="fa-solid fa-phone-volume me-3"></i>
+                                <p class="m-0">+855 (10-112-2671) </p>
+                            </li>
+                            <li class="contact-item d-flex align-items-center">
+                                <i class="fa-solid fa-envelope me-3"></i>
+                                <p class="m-0">choullansupport@comp.com</p>
+                            </li>
+                            <li class="contact-item d-flex align-items-center">
+                                <i class="fa-solid fa-clock me-3"></i>
+                                <p class="m-0">Mon-Sun 24/7</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mini-footer d-flex align-items-center justify-content-between border-top pt-3">
+                    <div class="copyright d-flex align-items-center">
+                        <i class="fa-regular fa-copyright me-2"></i>
+                        <p class="m-0">2024 Choullan. All Right Reserved.</p>
+                    </div>
+                    <div class="term-policy d-flex align-items-center">
+                        <a href="/pages/privacy_policy.html" class="text-decoration-none">Privacy Policy</a> <i
+                            class="fa-solid fa-circle mx-2"></i> <a href="/pages/term_condition.html"
+                            class="text-decoration-none">Terms &amp;
+                            Conditions</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+    <script src="/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="/plugins/aos/js/aos.js"></script> -->
+    <!-- <script>
+        AOS.init();
+    </script> -->
+
+</html>

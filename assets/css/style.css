@@ -401,7 +401,7 @@ footer p {
 
 /* ! end of footer */
 
-/* ! begin of contact */
+/* ! begin of about us */
 /* 
 .contact-us {
   height: 100vh;
@@ -430,6 +430,16 @@ footer p {
   background-attachment: fixed;
 }
 
+.blog .hero-banner {
+  width: 100%;
+  height: 300px;
+  background: url(/img/blog/blog-hero.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-attachment: fixed;
+}
+
 .hero-banner .link-text-banner {
   transition: 0.2s ease;
 }
@@ -441,7 +451,65 @@ footer p {
 .barnd-partner {
   width: 100%;
   height: 100px;
-  background-color: teal;
+}
+
+/* Marquee container */
+.marquee-container {
+  width: 100%; /* Container width */
+  height: 100%;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Gradient fade effect */
+.marquee-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to left,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 30%,
+    rgba(255, 255, 255, 0) 70%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  pointer-events: none;
+  z-index: 1; /* Make sure the fade is above the images */
+}
+
+/* Marquee content with animation */
+.marquee-content {
+  display: flex;
+  position: absolute;
+  animation: marquee 20s linear infinite; /* Continuous animation */
+}
+
+/* Individual images */
+.marquee-image {
+  width: 150px; /* Image size */
+  margin-right: 50px; /* Space between images */
+}
+
+/* Continuous scrolling animation */
+@keyframes marquee {
+  0% {
+    transform: translateX(0); /* Start at the left edge */
+  }
+  100% {
+    transform: translateX(
+      -100%
+    ); /* Move to the left by the width of the content */
+  }
+}
+
+/* Pause animation on hover */
+.marquee-container:hover .marquee-content {
+  animation-play-state: paused;
 }
 
 .our-team .card {
@@ -520,14 +588,18 @@ footer p {
   width: 50px;
 }
 
-.form-contact textarea {
+.contact-list .contact-item h4 {
+  color: var(--light-navy);
+}
+
+textarea {
   outline: none;
   border-radius: 10px;
   border: 1px solid #ddd;
   height: 100px;
 }
 
-.form-contact textarea:focus {
+textarea:focus {
   border: 1px solid var(--secondary-orange);
   background-color: hsla(28, 100%, 55%, 0.1);
 }
@@ -537,3 +609,163 @@ footer p {
   height: 500px;
 }
 /* ! end of contact */
+
+/* ! begin of blog */
+
+.blog-title {
+  text-decoration: none;
+  color: #000;
+  font-size: 23px;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+.blog-title:hover {
+  color: var(--secondary-orange);
+}
+
+.blog-list .card {
+  overflow: hidden;
+  border-radius: 10px;
+  border: none;
+}
+
+.blog-imag {
+  width: 100%;
+  height: 260px;
+  overflow: hidden;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+.blog-imag img {
+  width: 100%;
+  height: 100%;
+  transition: 0.3s ease;
+}
+
+.card:hover .blog-imag img {
+  transform: scale(1.1);
+}
+
+.blog-btn {
+  margin-top: 20px;
+  color: #000;
+  font-weight: 500;
+}
+
+.blog-btn .btn-arrow {
+  width: 30px;
+  height: 30px;
+  background-color: var(--secondary-orange);
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  transform: rotate(-45deg);
+  transition: 0.3s ease;
+}
+
+.card:hover .blog-btn {
+  color: var(--secondary-orange);
+}
+
+.card:hover .btn-arrow {
+  background-color: var(--secondary-orange-hover);
+  transform: rotate(0deg);
+}
+
+.blog-btn .btn-arrow i {
+  color: #fff;
+}
+
+/* ! end of blog */
+
+/* ! begin of blog detail */
+
+.blog-detail .hero-banner {
+  width: 100%;
+  height: 300px;
+  background: url(/img/blog-detail/blog-detail-hero.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-position-y: 0;
+  background-attachment: fixed;
+}
+
+.blog-content img {
+  width: 100%;
+  height: auto;
+  border-radius: 30px;
+}
+
+.main-point-blog {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgba(255, 133, 27, 0.2);
+  display: flex;
+  align-items: center;
+}
+
+.main-point-blog i {
+  font-size: 50px;
+  color: #ff851b;
+  margin-bottom: 10px;
+}
+
+.main-point-blog p {
+  font-size: 20px;
+  color: #000;
+  font-weight: 500;
+  padding-left: 20px;
+}
+
+.blog-detail .btn-social {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  background-color: var(--secondary-orange);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.blog-detail .btn-social i {
+  color: #fff;
+  font-size: 20px;
+}
+
+.form-content-blog textarea {
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+}
+
+.form-content-blog input {
+  padding: 7px 10px;
+}
+
+.form-check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-check input {
+  padding: 10px;
+}
+
+.form-check-input:checked {
+  background-color: var(--secondary-orange) !important;
+  border-color: transparent !important;
+}
+
+.form-check-input:focus {
+  border-color: var(--secondary-orange) !important;
+  outline: 0;
+  box-shadow: none !important;
+}
+
+/* ! end of blog detail */

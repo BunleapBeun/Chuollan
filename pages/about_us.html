@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
         <link rel="stylesheet" href="/plugins/flatpickr/css/flatpickr.min.css">
         <link rel="stylesheet" href="/plugins/swiper-js/css/swiper-bundle.min.css">
+        <link rel="stylesheet" href="/plugins/aos/css/aos.css">
     </head>
 
     <body>
@@ -126,7 +127,8 @@
         <main class="about-us">
             <section class="hero-banner">
                 <div class="container h-100">
-                    <div class="w-100 h-100 d-flex align-items-center justify-content-center flex-column">
+                    <div class="w-100 h-100 d-flex align-items-center justify-content-center flex-column"
+                        data-aos="fade-up">
                         <h1 class="m-0 link-text">About Us</h1>
                         <div class="d-flex align-items-center justify-content-center pt-3">
                             <a href="/index.html"
@@ -142,10 +144,10 @@
             <section class="who-we-are py-5">
                 <div class="container">
                     <div class="row">
-                        <div class="col-6">
+                        <div class="col-6" data-aos="fade-right">
                             <img src="/img/about-us/image-we-are.png" alt="">
                         </div>
-                        <div class="col-6">
+                        <div class="col-6" data-aos="fade-left">
                             <p class="m-0 link-text d-flex align-items-center fs-5 fw-medium"><i
                                     class="fa-solid fa-car-side text-danger fs-4 me-3"></i> WHO WE ARE?</p>
                             <h1 class="m-0 fw-bold mt-3">The Largest Car Rental Network In Cambodia</h1>
@@ -175,16 +177,28 @@
                     </div>
                 </div>
             </section>
-            <section class="barnd-partner">
+            <section class="barnd-partner" data-aos="fade-up">
                 <div class="container d-flex w-100 h-100 align-items-center justify-content-center">
-                    <h2 class="m-0 text-white">Brand Partner Marquee</h2>
+                    <div class="marquee-container">
+                        <div class="marquee-content" id="marquee-content">
+                            <!-- Original Images to loop -->
+                            <img src="/img/logo-brand/acura.png" alt="Image 1" class="marquee-image">
+                            <img src="/img/logo-brand/bmw.png" alt="Image 2" class="marquee-image">
+                            <img src="/img/logo-brand/bugatti.png" alt="Image 3" class="marquee-image">
+                            <img src="/img/logo-brand/chevrolet.png" alt="Image 4" class="marquee-image">
+                            <img src="/img/logo-brand/honda.png" alt="Image 5" class="marquee-image">
+                            <img src="/img/logo-brand/lexus.png" alt="Image 6" class="marquee-image">
+                            <img src="/img/logo-brand/mer.png" alt="Image 7" class="marquee-image">
+                            <img src="/img/logo-brand/toyota.png" alt="Image 8" class="marquee-image">
+                        </div>
+                    </div>
                 </div>
             </section>
             <section class="our-team py-5">
                 <div class="container">
-                    <h2 class="m-0 text-center mb-5">Our Expert Team Members</h2>
+                    <h2 class="m-0 text-center mb-5" data-aos="fade-up">Our Expert Team Members</h2>
                     <div class="row">
-                        <div class="col-3">
+                        <div class="col-3" data-aos="fade-right">
                             <div class="card">
                                 <div class="image-member">
                                     <img src="/img/about-us/member-image-ex.jpg" alt="">
@@ -217,7 +231,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3">
+                        <div class="col-3" data-aos="fade-up">
                             <div class="card">
                                 <div class="image-member">
                                     <img src="/img/about-us/member-image-ex.jpg" alt="">
@@ -250,7 +264,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3">
+                        <div class="col-3" data-aos="fade-up">
                             <div class="card">
                                 <div class="image-member">
                                     <img src="/img/about-us/member-image-ex.jpg" alt="">
@@ -283,7 +297,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3">
+                        <div class="col-3" data-aos="fade-left">
                             <div class="card">
                                 <div class="image-member">
                                     <img src="/img/about-us/member-image-ex.jpg" alt="">
@@ -319,7 +333,7 @@
                     </div>
                 </div>
             </section>
-            <section class="our-client pb-5">
+            <section class="our-client pb-5" data-aos="fade-up">
                 <div class="container">
                     <h2 class="m-0 text-center mb-5">What Our Clients Say About Us !</h2>
                     <div class="bg-swiper-client"></div>
@@ -468,8 +482,38 @@
             </div>
         </footer>
 
-        <script src="/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <script src="/plugins/swiper-js/js/swiper-bundle.min.js"></script>
     </body>
+    <script src="/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/plugins/swiper-js/js/swiper-bundle.min.js"></script>
+    <script src="/plugins/aos/js/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        // Grab the marquee content and images
+        const marqueeContent = document.getElementById('marquee-content');
+        const images = document.querySelectorAll('.marquee-image');
+
+        // Clone images to create a seamless loop
+        function cloneImages() {
+            // Get the width of one image + margin for space between images
+            const imageWidth = images[0].offsetWidth + parseInt(window.getComputedStyle(images[0]).marginRight);
+
+            // Duplicate images to make the total width twice the size of the container
+            images.forEach(image => {
+                const clonedImage = image.cloneNode(true);
+                marqueeContent.appendChild(clonedImage); // Append each cloned image
+            });
+
+            // Calculate the total width of the marquee content (original + cloned images)
+            const totalWidth = imageWidth * images.length; // Only use the original set of images (not doubled)
+            marqueeContent.style.width = `${totalWidth}px`; // Set the width to fit only the original set
+
+        }
+
+        // Call the cloneImages function when the page is loaded
+        cloneImages();
+
+    </script>
 
 </html>

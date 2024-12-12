@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
         <link rel="stylesheet" href="/plugins/flatpickr/css/flatpickr.min.css">
         <link rel="stylesheet" href="/plugins/swiper-js/css/swiper-bundle.min.css">
+        <link rel="stylesheet" href="/plugins/aos/css/aos.css">
     </head>
 
     <body>
@@ -126,7 +127,7 @@
         <main class="contact-us">
             <section class="hero-banner">
                 <div class="container h-100">
-                    <div class="w-100 h-100 d-flex align-items-center justify-content-center flex-column">
+                    <div class="w-100 h-100 d-flex align-items-center justify-content-center flex-column" data-aos="fade-up">
                         <h1 class="m-0 link-text">Contact Us</h1>
                         <div class="d-flex align-items-center justify-content-center pt-3">
                             <a href="/index.html"
@@ -142,9 +143,9 @@
             <section class="contact-area py-5">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-6 col-md-12">
+                        <div class="col-lg-6 col-md-12" data-aos="fade-right">
                             <div class="comp-info-contact">
-                                <h1 class="text-center">Visit Our Office</h1>
+                                <h2 class="text-center fw-bold link-text">Visit Our Office</h2>
                                 <p class="fs-5">We'd love to welcome you in person! Whether you want to discuss rental
                                     options, have
                                     questions, or need assistance with your booking, our friendly team is here to help.
@@ -181,8 +182,8 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-lg-6 col-md-12">
-                            <h1 class="text-center">Get In Touch</h1>
+                        <div class="col-lg-6 col-md-12" data-aos="fade-left">
+                            <h2 class="text-center fw-bold link-text">Get In Touch</h2>
                             <div class="form-contact">
                                 <div class="form-input mt-3">
                                     <input type="text" placeholder="Your name">
@@ -359,5 +360,10 @@
             </div>
         </footer>
     </body>
+    <script src="/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/plugins/aos/js/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </html>
