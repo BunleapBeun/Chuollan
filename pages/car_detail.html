@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chuollan - Car Details</title>
+        <link rel="stylesheet" href="/assets/css/style.css">
+        <link rel="stylesheet" href="/plugins/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+        <link rel="stylesheet" href="/plugins/flatpickr/css/flatpickr.min.css">
+        <link rel="stylesheet" href="/plugins/swiper-js/css/swiper-bundle.min.css">
+        <!-- <link rel="stylesheet" href="/plugins/aos/css/aos.css"> -->
+        <link rel="stylesheet" href="/plugins/swiper-js/css/swiper-bundle.min.css">
+    </head>
+
+    <body>
+
+        <header>
+            <nav class="nav-top-mini">
+                <div class="container d-flex justify-content-between">
+                    <div class="contact-info d-flex">
+                        <div class="phone-call d-flex align-items-center pe-4">
+                            <i class="fa-solid fa-phone"></i>
+                            <p class="m-0 ps-2">+885-97-230-3456</p>
+                        </div>
+                        <div class="email-info d-flex align-items-center">
+                            <i class="fa-solid fa-envelope"></i>
+                            <p class="m-0 ps-2">coullansupport@comp.com</p>
+                        </div>
+                    </div>
+                    <div class="social-media">
+                        <a href="#" class="text-decoration-none text-white fs-5 me-2"><i
+                                class="fa-brands fa-square-facebook"></i></a>
+                        <a href="#" class="text-decoration-none text-white fs-5 me-2"><i
+                                class="fa-brands fa-square-instagram"></i></a>
+                        <a href="#" class="text-decoration-none text-white fs-5 me-2"><i
+                                class="fa-brands fa-square-twitter"></i></a>
+                        <a href="#" class="text-decoration-none text-white fs-5"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </nav>
+            <nav class="navbar navbar-expand-lg p-1">
+                <div class="container">
+                    <a class="navbar-brand" href="/index.html"><img src="../img/Chullan-Circle-Logo.png"
+                            alt="logo-chuollan"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto ms-auto mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link">Service <i class="fa-solid fa-chevron-down"></i></a>
+                                <ul class="menu-dropdown">
+                                    <li class="nav-item">
+                                        <a href="/pages/driver_rent.html"
+                                            class="nav-link p-0 d-flex justify-content-between align-items-center">Driver
+                                            Rent <i class="fa-solid fa-chevron-right ps-5"></i></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="/pages/car_loan_calculator.html"
+                                            class="nav-link p-0 w-100 d-flex justify-content-between align-items-center">Car
+                                            Loan <i class="fa-solid fa-chevron-right"></i></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link">Vehicle <i class="fa-solid fa-chevron-down"></i></a>
+                                <ul class="menu-dropdown">
+                                    <li class="nav-item">
+                                        <a href="/pages/car_listing.html"
+                                            class="nav-link p-0 d-flex justify-content-between align-items-center">SUV
+                                            <i class="fa-solid fa-chevron-right ps-5"></i></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="/pages/car_listing.html"
+                                            class="nav-link p-0 w-100 d-flex justify-content-between align-items-center">Sport
+                                            Car <i class="fa-solid fa-chevron-right"></i></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="/pages/car_listing.html"
+                                            class="nav-link p-0 w-100 d-flex justify-content-between align-items-center">Sedan
+                                            <i class="fa-solid fa-chevron-right"></i></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="/pages/car_listing.html"
+                                            class="nav-link p-0 w-100 d-flex justify-content-between align-items-center">Pickup
+                                            <i class="fa-solid fa-chevron-right"></i></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/pages/pricing.html">Pricing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/pages/blog.html">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/pages/career.html">Career</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/pages/faq.html">FAQ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/pages/contact_us.html">Contact us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/pages/about_us.html">About us</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex">
+                            <a href="/pages/sign_in.html" class="btn-chuollan me-3 text-decoration-none"
+                                type="button">Sign In</a>
+                            <a href="/pages/sign_up.html" class="btn-chuollan text-decoration-none" type="button">Sign
+                                Up</a>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="car-detail">
+            <section class="hero-banner">
+                <div class="container h-100">
+                    <div class="w-100 h-100 d-flex align-items-center justify-content-center flex-column"
+                        data-aos="fade-up">
+                        <h1 class="m-0 link-text">Vehicles</h1>
+                        <div class="d-flex align-items-center justify-content-center pt-3">
+                            <a href="/index.html"
+                                class="text-decoration-none text-white fs-5 me-3 link-text-banner fw-medium">Home</a>
+                            <i class="fa-solid fa-angles-right text-white fs-5 pt-1"></i>
+                            <a href="/pages/car_listing.html"
+                                class="text-decoration-none text-white fs-5 ms-3 link-text-banner fw-medium">SUV</a>
+                            <i class="fa-solid fa-angles-right text-white fs-5 pt-1 ps-3"></i>
+                            <a href="/pages/car_detail.html"
+                                class="text-decoration-none active fs-5 ms-3 link-text-banner fw-medium">Audi Q5 2.0T
+                                Premium Plus</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="py-5">
+                <div class="container">
+                    <div class="row g-4">
+                        <div class="col-3 booking-side">
+                            <div class="card p-3">
+                                <p class="m-0 fs-3 fw-bold pb-3 border-bottom">$89.32 <span
+                                        class="fw-medium fs-5 text-secondary">/ day</span></p>
+                                <ul class="p-0 m-0 list-unstyled pb-3 border-bottom">
+                                    <li class="d-flex align-items-center justify-content-between pt-3">
+                                        <div class="d-flex align-items-center">
+                                            <i class="fa-solid fa-door-open pe-2 fs-5"></i>
+                                            <p class="m-0 fs-5 fw-medium">Doors</p>
+                                        </div>
+                                        <p class="m-0 fs-5">4</p>
+                                    </li>
+                                    <li class="d-flex align-items-center justify-content-between pt-3">
+                                        <div class="d-flex align-items-center">
+                                            <i class="fa-solid fa-users fs-5 pe-2"></i>
+                                            <p class="m-0 fs-5 fw-medium">Passangers</p>
+                                        </div>
+                                        <p class="m-0 fs-5">3</p>
+                                    </li>
+                                    <li class="d-flex align-items-center justify-content-between pt-3">
+                                        <div class="d-flex align-items-center">
+                                            <i class="fa-solid fa-suitcase-rolling fs-5 pe-2"></i>
+                                            <p class="m-0 fs-5 fw-medium">Luggage</p>
+                                        </div>
+                                        <p class="m-0 fs-5">2</p>
+                                    </li>
+                                    <li class="d-flex align-items-center justify-content-between pt-3">
+                                        <div class="d-flex align-items-center">
+                                            <i class="fa-solid fa-fan fs-5 pe-2"></i>
+                                            <p class="m-0 fs-5 fw-medium">Air Condition</p>
+                                        </div>
+                                        <p class="m-0 fs-5">Yes</p>
+                                    </li>
+                                </ul>
+                                <a href="#" class="text-decoration-none btn-chuollan py-2 mt-3 text-center">
+                                    Book Now
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-9">
+                            <div class="card border-0 car-info">
+                                <div class="image-show">
+                                    <!-- Swiper -->
+                                    <div class="swiper mySwiper rounded-5 overflow-hidden">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="/img/car-detail/banner.png" alt="">
+                                            </div>
+                                            <div class="swiper-slide"><img src="/img/car-detail/banner2.png" alt="">
+                                            </div>
+                                            <div class="swiper-slide"><img src="/img/car-detail/banner3.png" alt="">
+                                            </div>
+                                            <div class="swiper-slide"><img src="/img/car-detail/banner4.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="d-flex align-items-center justify-content-between p-4 border rounded-4 mt-5">
+                                    <div class="d-flex align-items-center">
+                                        <div class="icon">
+                                            <i class="fa-solid fa-gauge-high"></i>
+                                        </div>
+                                        <div class="ms-3">
+                                            <p class="m-0 fs-5 fw-bold">Unlimited KMs</p>
+                                            <p class="m-0 fs-6 fw-medium text-secondary">Endless Km with no extra charge
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <div class="icon">
+                                            <i class="fa-solid fa-unlock"></i>
+                                        </div>
+                                        <div class="ms-3">
+                                            <p class="m-0 fs-5 fw-bold">Unlimited KMs</p>
+                                            <p class="m-0 fs-6 fw-medium text-secondary">Endless Km with no extra charge
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pt-5">
+                                    <h1 class="m-0 fw-bold">Know about our car service</h1>
+                                    <p class="m-0 text-secondary fs-6 pt-3">Lorem pretium fermentum quam, sit amet
+                                        cursus
+                                        ante sollicitudin velen morbi consesua the miss sustion consation porttitor orci
+                                        sit amet iaculis nisan. Lorem pretium fermentum quam sit amet cursus ante
+                                        sollicitudin velen fermen morbinetion consesua the risus consequation the
+                                        porttiton.</p>
+                                    <ul class="p-0 m-0 list-unstyled border-bottom pt-4 pb-5">
+                                        <li class="d-flex align-items-center">
+                                            <i class="fa-solid fa-circle-check fs-4 link-text me-2"></i>
+                                            <p class="m-0 fw-medium fs-5">24/7 Roadside Assistance</p>
+                                        </li>
+                                        <li class="d-flex align-items-center mt-3">
+                                            <i class="fa-solid fa-circle-check fs-4 link-text me-2"></i>
+                                            <p class="m-0 fw-medium fs-5">Free Cancellation &amp; Return</p>
+                                        </li>
+                                        <li class="d-flex align-items-center mt-3">
+                                            <i class="fa-solid fa-circle-check fs-4 link-text me-2"></i>
+                                            <p class="m-0 fw-medium fs-5">Rent Now Pay When You Arrive</p>
+                                        </li>
+                                    </ul>
+                                    <h1 class="m-0 pt-5 fw-bold pb-2">Premium amenities and features</h1>
+                                    <div class="row pt-4 pb-5 border-bottom">
+                                        <div class="col-3">
+                                            <ul class="p-0 m-0 list-unstyled">
+                                                <li class="d-flex align-items-center">
+                                                    <i class="fa-solid fa-circle-check fs-4 link-text me-2"></i>
+                                                    <p class="m-0 fw-medium fs-5">Music System</p>
+                                                </li>
+                                                <li class="d-flex align-items-center pt-4">
+                                                    <i class="fa-solid fa-circle-check fs-4 link-text me-2"></i>
+                                                    <p class="m-0 fw-medium fs-5">Full Boot Space</p>
+                                                </li>
+                                                <li class="d-flex align-items-center pt-4">
+                                                    <i class="fa-solid fa-circle-check fs-4 link-text me-2"></i>
+                                                    <p class="m-0 fw-medium fs-5">Power Steering</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-3">
+                                            <ul class="p-0 m-0 list-unstyled">
+                                                <li class="d-flex align-items-center">
+                                                    <i class="fa-solid fa-circle-check fs-4 link-text me-2"></i>
+                                                    <p class="m-0 fw-medium fs-5">Toolkit</p>
+                                                </li>
+                                                <li class="d-flex align-items-center pt-4">
+                                                    <i class="fa-solid fa-circle-check fs-4 link-text me-2"></i>
+                                                    <p class="m-0 fw-medium fs-5">Usb Charger</p>
+                                                </li>
+                                                <li class="d-flex align-items-center pt-4">
+                                                    <i class="fa-solid fa-circle-check fs-4 link-text me-2"></i>
+                                                    <p class="m-0 fw-medium fs-5">Power Windows</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-3">
+                                            <ul class="p-0 m-0 list-unstyled">
+                                                <li class="d-flex align-items-center">
+                                                    <i class="fa-solid fa-circle-check fs-4 link-text me-2"></i>
+                                                    <p class="m-0 fw-medium fs-5">Abs System</p>
+                                                </li>
+                                                <li class="d-flex align-items-center pt-4">
+                                                    <i class="fa-solid fa-circle-check fs-4 link-text me-2"></i>
+                                                    <p class="m-0 fw-medium fs-5">Aux Input</p>
+                                                </li>
+                                                <li class="d-flex align-items-center pt-4">
+                                                    <i class="fa-solid fa-circle-check fs-4 link-text me-2"></i>
+                                                    <p class="m-0 fw-medium fs-5">Bluetooth</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-3">
+                                            <ul class="p-0 m-0 list-unstyled">
+                                                <li class="d-flex align-items-center">
+                                                    <i class="fa-solid fa-circle-check fs-4 link-text me-2"></i>
+                                                    <p class="m-0 fw-medium fs-5">Spare Tyre</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="faq pt-5">
+                                    <h1 class="m-0 fw-bold link-text">Frequently Asked Questions</h1>
+                                    <div class="row mt-4">
+                                        <div class="col-6">
+                                            <div class="wrapper">
+                                                <div class="container-faq">
+                                                    <div class="question">
+                                                        How do I make a reservation on your website?
+                                                    </div>
+                                                    <div class="answercont">
+                                                        <div class="answer">
+                                                            Provide a step-by-step guide on how users can browse
+                                                            and book travel
+                                                            services on your platform. Include information on
+                                                            searching for
+                                                            destinations, selecting dates, choosing
+                                                            accommodation, and completing the
+                                                            booking process. Mention any special features or
+                                                            tools that can help users
+                                                            find the best deals.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="container-faq">
+                                                    <div class="question">
+                                                        What documents do I need for my trip, and how do I
+                                                        obtain them?
+                                                    </div>
+                                                    <div class="answercont">
+                                                        <div class="answer">
+                                                            Provide a step-by-step guide on how users can browse
+                                                            and book travel
+                                                            services on your platform. Include information on
+                                                            searching for
+                                                            destinations, selecting dates, choosing
+                                                            accommodation, and completing the
+                                                            booking process. Mention any special features or
+                                                            tools that can help users
+                                                            find the best deals.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="container-faq">
+                                                    <div class="question">
+                                                        In the event that I need to modify or cancel my
+                                                        reservation, what are the
+                                                        policies in place?
+                                                    </div>
+                                                    <div class="answercont">
+                                                        <div class="answer">
+                                                            Provide a step-by-step guide on how users can browse
+                                                            and book travel
+                                                            services on your platform. Include information on
+                                                            searching for
+                                                            destinations, selecting dates, choosing
+                                                            accommodation, and completing the
+                                                            booking process. Mention any special features or
+                                                            tools that can help users
+                                                            find the best deals.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="container-faq">
+                                                    <div class="question">
+                                                        Can you specify the types of credit/debit cards, digital
+                                                        wallets, or other
+                                                        online payment methods accepted?
+                                                    </div>
+                                                    <div class="answercont">
+                                                        <div class="answer">
+                                                            Provide a step-by-step guide on how users can browse
+                                                            and book travel
+                                                            services on your platform. Include information on
+                                                            searching for
+                                                            destinations, selecting dates, choosing
+                                                            accommodation, and completing the
+                                                            booking process. Mention any special features or
+                                                            tools that can help users
+                                                            find the best deals.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="container-faq">
+                                                    <div class="question">
+                                                        What payment methods do you accept?
+                                                    </div>
+                                                    <div class="answercont">
+                                                        <div class="answer">
+                                                            Provide a step-by-step guide on how users can browse
+                                                            and book travel
+                                                            services on your platform. Include information on
+                                                            searching for
+                                                            destinations, selecting dates, choosing
+                                                            accommodation, and completing the
+                                                            booking process. Mention any special features or
+                                                            tools that can help users
+                                                            find the best deals.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="container-faq">
+                                                    <div class="question">
+                                                        Can I modify or cancel my reservation?
+                                                    </div>
+                                                    <div class="answercont">
+                                                        <div class="answer">
+                                                            Provide a step-by-step guide on how users can browse
+                                                            and book travel
+                                                            services on your platform. Include information on
+                                                            searching for
+                                                            destinations, selecting dates, choosing
+                                                            accommodation, and completing the
+                                                            booking process. Mention any special features or
+                                                            tools that can help users
+                                                            find the best deals.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="container-faq">
+                                                    <div class="question">
+                                                        Do you offer discounts for group bookings?
+                                                    </div>
+                                                    <div class="answercont">
+                                                        <div class="answer">
+                                                            Provide a step-by-step guide on how users can browse
+                                                            and book travel
+                                                            services on your platform. Include information on
+                                                            searching for
+                                                            destinations, selecting dates, choosing
+                                                            accommodation, and completing the
+                                                            booking process. Mention any special features or
+                                                            tools that can help users
+                                                            find the best deals.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="wrapper">
+                                                <div class="container-faq">
+                                                    <div class="question">
+                                                        How do I search for hotels on your website?
+                                                    </div>
+                                                    <div class="answercont">
+                                                        <div class="answer">
+                                                            Provide a step-by-step guide on how users can browse
+                                                            and book travel
+                                                            services on your platform. Include information on
+                                                            searching for
+                                                            destinations, selecting dates, choosing
+                                                            accommodation, and completing the
+                                                            booking process. Mention any special features or
+                                                            tools that can help users
+                                                            find the best deals.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="container-faq">
+                                                    <div class="question">
+                                                        In the event that I need to modify or cancel my
+                                                        reservation, what are the
+                                                        policies in place?
+                                                    </div>
+                                                    <div class="answercont">
+                                                        <div class="answer">
+                                                            Provide a step-by-step guide on how users can browse
+                                                            and book travel
+                                                            services on your platform. Include information on
+                                                            searching for
+                                                            destinations, selecting dates, choosing
+                                                            accommodation, and completing the
+                                                            booking process. Mention any special features or
+                                                            tools that can help users
+                                                            find the best deals.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="container-faq">
+                                                    <div class="question">
+                                                        Is breakfast included in the room rate?
+                                                    </div>
+                                                    <div class="answercont">
+                                                        <div class="answer">
+                                                            Provide a step-by-step guide on how users can browse
+                                                            and book travel
+                                                            services on your platform. Include information on
+                                                            searching for
+                                                            destinations, selecting dates, choosing
+                                                            accommodation, and completing the
+                                                            booking process. Mention any special features or
+                                                            tools that can help users
+                                                            find the best deals.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="container-faq">
+                                                    <div class="question">
+                                                        Are pets allowed in the hotels?
+                                                    </div>
+                                                    <div class="answercont">
+                                                        <div class="answer">
+                                                            Provide a step-by-step guide on how users can browse
+                                                            and book travel
+                                                            services on your platform. Include information on
+                                                            searching for
+                                                            destinations, selecting dates, choosing
+                                                            accommodation, and completing the
+                                                            booking process. Mention any special features or
+                                                            tools that can help users
+                                                            find the best deals.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="container-faq">
+                                                    <div class="question">
+                                                        How do I contact customer support if I have a question
+                                                        or
+                                                        issue?
+                                                    </div>
+                                                    <div class="answercont">
+                                                        <div class="answer">
+                                                            Provide a step-by-step guide on how users can browse
+                                                            and book travel
+                                                            services on your platform. Include information on
+                                                            searching for
+                                                            destinations, selecting dates, choosing
+                                                            accommodation, and completing the
+                                                            booking process. Mention any special features or
+                                                            tools that can help users
+                                                            find the best deals.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="container-faq">
+                                                    <div class="question">
+                                                        Are there any loyalty programs or rewards for frequent
+                                                        guests?
+                                                    </div>
+                                                    <div class="answercont">
+                                                        <div class="answer">
+                                                            Provide a step-by-step guide on how users can browse
+                                                            and book travel
+                                                            services on your platform. Include information on
+                                                            searching for
+                                                            destinations, selecting dates, choosing
+                                                            accommodation, and completing the
+                                                            booking process. Mention any special features or
+                                                            tools that can help users
+                                                            find the best deals.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-3">
+                        <p class="m-0 fw-bold fs-5 mb-2">About Company</p>
+                        <p class="m-0">
+                            At <span class="link-text fw-medium">CHOULLAN</span>, we are committed to providing a
+                            hassle-free car rental experience
+                            with a focus
+                            on exceptional customer service and affordable rates.
+                        </p>
+                        <p class="m-0 mt-3 fw-medium fs-5">
+                            Follow Us
+                        </p>
+                        <ul class="social-media-list">
+                            <li class="social-item">
+                                <a href="#" class="social-link"><i class="fa-brands fa-square-facebook"></i></a>
+                            </li>
+                            <li class="social-item">
+                                <a href="#" class="social-link"><i class="fa-brands fa-square-instagram"></i></a>
+                            </li>
+                            <li class="social-item">
+                                <a href="#" class="social-link"><i class="fa-brands fa-square-twitter"></i></a>
+                            </li>
+                            <li class="social-item">
+                                <a href="#" class="social-link"><i class="fa-brands fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-3">
+                        <p class="m-0 fs-5 fw-bold mb-2">Quick Links</p>
+                        <div class="row">
+                            <div class="col-6">
+                                <ul class="list-quick">
+                                    <li class="quick-item">
+                                        <a href="/index.html" class="quick-link"> <i
+                                                class="fa-solid fa-angle-right"></i> Home</a>
+                                    </li>
+                                    <li class="quick-item">
+                                        <a href="/pages/pricing.html" class="quick-link"> <i
+                                                class="fa-solid fa-angle-right"></i> Pricing</a>
+                                    </li>
+                                    <li class="quick-item">
+                                        <a href="/pages/blog.html" class="quick-link"> <i
+                                                class="fa-solid fa-angle-right"></i> Blog</a>
+                                    </li>
+                                    <li class="quick-item">
+                                        <a href="/pages/career.html" class="quick-link"> <i
+                                                class="fa-solid fa-angle-right"></i> Career</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-6">
+                                <ul class="list-quick">
+                                    <li class="quick-item">
+                                        <a href="/pages/faq.html" class="quick-link"> <i
+                                                class="fa-solid fa-angle-right"></i> FAQ</a>
+                                    </li>
+                                    <li class="quick-item">
+                                        <a href="/pages/about_us.html" class="quick-link"> <i
+                                                class="fa-solid fa-angle-right"></i> About us</a>
+                                    </li>
+                                    <li class="quick-item">
+                                        <a href="/pages/contact_us.html" class="quick-link"> <i
+                                                class="fa-solid fa-angle-right"></i> Contact us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <p class="m-0 fs-5 fw-bold mb-2">Services</p>
+                        <ul class="list-quick">
+                            <li class="quick-item">
+                                <a href="/pages/driver_rent.html" class="quick-link"> <i
+                                        class="fa-solid fa-angle-right"></i> Driver Rent</a>
+                            </li>
+                            <li class="quick-item">
+                                <a href="/pages/car_loan_calculator.html" class="quick-link"> <i
+                                        class="fa-solid fa-angle-right"></i> Car Loan</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <p class="m-0 fs-5 fw-bold mb-2">Vehicles</p>
+                        <ul class="list-quick">
+                            <li class="quick-item">
+                                <a href="/pages/car_listing.html" class="quick-link"> <i
+                                        class="fa-solid fa-angle-right"></i> SUV</a>
+                            </li>
+                            <li class="quick-item">
+                                <a href="/pages/car_listing.html" class="quick-link"> <i
+                                        class="fa-solid fa-angle-right"></i> Sport Car</a>
+                            </li>
+                            <li class="quick-item">
+                                <a href="/pages/car_listing.html" class="quick-link"> <i
+                                        class="fa-solid fa-angle-right"></i> Sedan</a>
+                            </li>
+                            <li class="quick-item">
+                                <a href="/pages/car_listing.html" class="quick-link"> <i
+                                        class="fa-solid fa-angle-right"></i> Pickup</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-3">
+                        <p class="m-0 fw-bold fs-5 mb-2">Contact Us</p>
+                        <ul class="info-contact p-0 list-unstyled">
+                            <li class="contact-item d-flex align-items-center">
+                                <i class="fa-solid fa-map-location-dot me-3"></i>
+                                <p class="m-0">Russian Federation Blvd (110), Phnom Penh 120404</p>
+                            </li>
+                            <li class="contact-item d-flex align-items-center">
+                                <i class="fa-solid fa-phone-volume me-3"></i>
+                                <p class="m-0">+855 (10-112-2671) </p>
+                            </li>
+                            <li class="contact-item d-flex align-items-center">
+                                <i class="fa-solid fa-envelope me-3"></i>
+                                <p class="m-0">choullansupport@comp.com</p>
+                            </li>
+                            <li class="contact-item d-flex align-items-center">
+                                <i class="fa-solid fa-clock me-3"></i>
+                                <p class="m-0">Mon-Sun 24/7</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mini-footer d-flex align-items-center justify-content-between border-top pt-3">
+                    <div class="copyright d-flex align-items-center">
+                        <i class="fa-regular fa-copyright me-2"></i>
+                        <p class="m-0">2024 Choullan. All Right Reserved.</p>
+                    </div>
+                    <div class="term-policy d-flex align-items-center">
+                        <a href="/pages/privacy_policy.html" class="text-decoration-none">Privacy Policy</a> <i
+                            class="fa-solid fa-circle mx-2"></i> <a href="/pages/term_condition.html"
+                            class="text-decoration-none">Terms &amp;
+                            Conditions</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+    <script src="https://storage.ko-fi.com/cdn/scripts/overlay-widget.js"></script>
+    <script src="/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/plugins/swiper-js/js/swiper-bundle.min.js"></script>
+    <!-- <script src="/plugins/aos/js/aos.js"></script> -->
+    <link rel="stylesheet" href="/plugins/swiper-js/js/swiper-bundle.min.js">
+    <script>
+        AOS.init();
+    </script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
+    <script>
+
+        let question = document.querySelectorAll(".question");
+
+        question.forEach(question => {
+            question.addEventListener("click", event => {
+                const active = document.querySelector(".question.active");
+                if (active && active !== question) {
+                    active.classList.toggle("active");
+                    active.nextElementSibling.style.maxHeight = 0;
+                }
+                question.classList.toggle("active");
+                const answer = question.nextElementSibling;
+                if (question.classList.contains("active")) {
+                    answer.style.maxHeight = answer.scrollHeight + "px";
+                } else {
+                    answer.style.maxHeight = 0;
+                }
+            })
+        })
+
+    </script>
+
+</html>

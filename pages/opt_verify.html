@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chuollan - OTP Verify</title>
+        <link rel="stylesheet" href="../assets/css/style.css">
+        <link rel="stylesheet" href="../plugins/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
+        <link rel="stylesheet" href="../plugins/aos/css/aos.css">
+    </head>
+
+    <body>
+
+        <header>
+            <nav class="nav-top-mini">
+                <div class="container d-flex justify-content-between">
+                    <div class="contact-info d-flex">
+                        <div class="phone-call d-flex align-items-center pe-4">
+                            <i class="fa-solid fa-phone"></i>
+                            <p class="m-0 ps-2">+885-97-230-3456</p>
+                        </div>
+                        <div class="email-info d-flex align-items-center">
+                            <i class="fa-solid fa-envelope"></i>
+                            <p class="m-0 ps-2">coullansupport@comp.com</p>
+                        </div>
+                    </div>
+                    <div class="social-media">
+                        <a href="#" class="text-decoration-none text-white fs-5 me-2"><i
+                                class="fa-brands fa-square-facebook"></i></a>
+                        <a href="#" class="text-decoration-none text-white fs-5 me-2"><i
+                                class="fa-brands fa-square-instagram"></i></a>
+                        <a href="#" class="text-decoration-none text-white fs-5 me-2"><i
+                                class="fa-brands fa-square-twitter"></i></a>
+                        <a href="#" class="text-decoration-none text-white fs-5"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </nav>
+            <nav class="navbar navbar-expand-lg p-1">
+                <div class="container">
+                    <a class="navbar-brand" href="/index.html"><img src="../img/Chullan-Circle-Logo.png"
+                            alt="logo-chuollan"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto ms-auto mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link">Service <i class="fa-solid fa-chevron-down"></i></a>
+                                <ul class="menu-dropdown">
+                                    <li class="nav-item">
+                                        <a href="/pages/driver_rent.html"
+                                            class="nav-link p-0 d-flex justify-content-between align-items-center">Driver
+                                            Rent <i class="fa-solid fa-chevron-right ps-5"></i></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="/pages/car_loan_calculator.html"
+                                            class="nav-link p-0 w-100 d-flex justify-content-between align-items-center">Car
+                                            Loan <i class="fa-solid fa-chevron-right"></i></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link">Vehicle <i class="fa-solid fa-chevron-down"></i></a>
+                                <ul class="menu-dropdown">
+                                    <li class="nav-item">
+                                        <a href="/pages/car_listing.html"
+                                            class="nav-link p-0 d-flex justify-content-between align-items-center">SUV
+                                            <i class="fa-solid fa-chevron-right ps-5"></i></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="/pages/car_listing.html"
+                                            class="nav-link p-0 w-100 d-flex justify-content-between align-items-center">Sport
+                                            Car <i class="fa-solid fa-chevron-right"></i></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="/pages/car_listing.html"
+                                            class="nav-link p-0 w-100 d-flex justify-content-between align-items-center">Sedan
+                                            <i class="fa-solid fa-chevron-right"></i></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="/pages/car_listing.html"
+                                            class="nav-link p-0 w-100 d-flex justify-content-between align-items-center">Pickup
+                                            <i class="fa-solid fa-chevron-right"></i></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/pages/pricing.html">Pricing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/pages/blog.html">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/pages/career.html">Career</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/pages/faq.html">FAQ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/pages/contact_us.html">Contact us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/pages/about_us.html">About us</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex">
+                            <a href="/pages/sign_in.html" class="btn-chuollan me-3 text-decoration-none"
+                                type="button">Sign In</a>
+                            <a href="/pages/sign_up.html" class="btn-chuollan text-decoration-none" type="button">Sign
+                                Up</a>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section class="form-auth">
+                <div class="container d-flex h-100 justify-content-center align-items-center">
+                    <div class="card mb-200 border p-3 d-flex flex-column align-items-center justify-content-center">
+                        <div class="btn-fg">
+                            <i class="fa-solid fa-envelope-open-text"></i>
+                        </div>
+                        <h2 class="my-3 fw-bold">Please check your email</h2>
+                        <p class="text-secondary">We’ve sent a code to <span class="link-text">useracc@gmail.com</span>
+                        </p>
+                        <form action="" method="">
+                            <input class="otp" type="text" oninput="digitValidate(this)" onkeyup="tabChange(0)"
+                                maxlength=1>
+                            <input class="otp ms-2" type="text" oninput="digitValidate(this)" onkeyup="tabChange(1)"
+                                maxlength=1>
+                            <input class="otp ms-2" type="text" oninput="digitValidate(this)" onkeyup="tabChange(2)"
+                                maxlength=1>
+                            <input class="otp ms-2" type="text" oninput="digitValidate(this)" onkeyup="tabChange(3)"
+                                maxlength=1>
+                            <input class="otp ms-2" type="text" oninput="digitValidate(this)" onkeyup="tabChange(4)"
+                                maxlength=1>
+                            <input class="otp ms-2" type="text" oninput="digitValidate(this)" onkeyup="tabChange(5)"
+                                maxlength=1>
+                        </form>
+                        <a href="/pages/create_new_password.html"
+                            class="btn-chuollan mt-3 w-100 text-center text-decoration-none">Very</a>
+                        <p class="text-secondary m-0 mt-2 mb-3">Didn’t receive an email? <a type="button" class="link-text fw-medium text-decoration-none">Resend</a></p>
+                        <a href="/pages/sign_in.html"
+                            class="text-decoration-none text-secondary d-flex align-items-center justify-content-center"><i
+                                class="fa-solid fa-arrow-left-long pe-3 pt-1"></i> Back to Sign In</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-3">
+                        <p class="m-0 fw-bold fs-5 mb-2">About Company</p>
+                        <p class="m-0">
+                            At <span class="link-text fw-medium">CHOULLAN</span>, we are committed to providing a
+                            hassle-free car rental experience
+                            with a focus
+                            on exceptional customer service and affordable rates.
+                        </p>
+                        <p class="m-0 mt-3 fw-medium fs-5">
+                            Follow Us
+                        </p>
+                        <ul class="social-media-list">
+                            <li class="social-item">
+                                <a href="#" class="social-link"><i class="fa-brands fa-square-facebook"></i></a>
+                            </li>
+                            <li class="social-item">
+                                <a href="#" class="social-link"><i class="fa-brands fa-square-instagram"></i></a>
+                            </li>
+                            <li class="social-item">
+                                <a href="#" class="social-link"><i class="fa-brands fa-square-twitter"></i></a>
+                            </li>
+                            <li class="social-item">
+                                <a href="#" class="social-link"><i class="fa-brands fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-3">
+                        <p class="m-0 fs-5 fw-bold mb-2">Quick Links</p>
+                        <div class="row">
+                            <div class="col-6">
+                                <ul class="list-quick">
+                                    <li class="quick-item">
+                                        <a href="/index.html" class="quick-link"> <i
+                                                class="fa-solid fa-angle-right"></i> Home</a>
+                                    </li>
+                                    <li class="quick-item">
+                                        <a href="/pages/pricing.html" class="quick-link"> <i
+                                                class="fa-solid fa-angle-right"></i> Pricing</a>
+                                    </li>
+                                    <li class="quick-item">
+                                        <a href="/pages/blog.html" class="quick-link"> <i
+                                                class="fa-solid fa-angle-right"></i> Blog</a>
+                                    </li>
+                                    <li class="quick-item">
+                                        <a href="/pages/career.html" class="quick-link"> <i
+                                                class="fa-solid fa-angle-right"></i> Career</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-6">
+                                <ul class="list-quick">
+                                    <li class="quick-item">
+                                        <a href="/pages/faq.html" class="quick-link"> <i
+                                                class="fa-solid fa-angle-right"></i> FAQ</a>
+                                    </li>
+                                    <li class="quick-item">
+                                        <a href="/pages/about_us.html" class="quick-link"> <i
+                                                class="fa-solid fa-angle-right"></i> About us</a>
+                                    </li>
+                                    <li class="quick-item">
+                                        <a href="/pages/contact_us.html" class="quick-link"> <i
+                                                class="fa-solid fa-angle-right"></i> Contact us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <p class="m-0 fs-5 fw-bold mb-2">Services</p>
+                        <ul class="list-quick">
+                            <li class="quick-item">
+                                <a href="/pages/driver_rent.html" class="quick-link"> <i
+                                        class="fa-solid fa-angle-right"></i> Driver Rent</a>
+                            </li>
+                            <li class="quick-item">
+                                <a href="/pages/car_loan_calculator.html" class="quick-link"> <i
+                                        class="fa-solid fa-angle-right"></i> Car Loan</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <p class="m-0 fs-5 fw-bold mb-2">Vehicles</p>
+                        <ul class="list-quick">
+                            <li class="quick-item">
+                                <a href="/pages/car_listing.html" class="quick-link"> <i
+                                        class="fa-solid fa-angle-right"></i> SUV</a>
+                            </li>
+                            <li class="quick-item">
+                                <a href="/pages/car_listing.html" class="quick-link"> <i
+                                        class="fa-solid fa-angle-right"></i> Sport Car</a>
+                            </li>
+                            <li class="quick-item">
+                                <a href="/pages/car_listing.html" class="quick-link"> <i
+                                        class="fa-solid fa-angle-right"></i> Sedan</a>
+                            </li>
+                            <li class="quick-item">
+                                <a href="/pages/car_listing.html" class="quick-link"> <i
+                                        class="fa-solid fa-angle-right"></i> Pickup</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-3">
+                        <p class="m-0 fw-bold fs-5 mb-2">Contact Us</p>
+                        <ul class="info-contact p-0 list-unstyled">
+                            <li class="contact-item d-flex align-items-center">
+                                <i class="fa-solid fa-map-location-dot me-3"></i>
+                                <p class="m-0">Russian Federation Blvd (110), Phnom Penh 120404</p>
+                            </li>
+                            <li class="contact-item d-flex align-items-center">
+                                <i class="fa-solid fa-phone-volume me-3"></i>
+                                <p class="m-0">+855 (10-112-2671) </p>
+                            </li>
+                            <li class="contact-item d-flex align-items-center">
+                                <i class="fa-solid fa-envelope me-3"></i>
+                                <p class="m-0">choullansupport@comp.com</p>
+                            </li>
+                            <li class="contact-item d-flex align-items-center">
+                                <i class="fa-solid fa-clock me-3"></i>
+                                <p class="m-0">Mon-Sun 24/7</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mini-footer d-flex align-items-center justify-content-between border-top pt-3">
+                    <div class="copyright d-flex align-items-center">
+                        <i class="fa-regular fa-copyright me-2"></i>
+                        <p class="m-0">2024 Choullan. All Right Reserved.</p>
+                    </div>
+                    <div class="term-policy d-flex align-items-center">
+                        <a href="/pages/privacy_policy.html" class="text-decoration-none">Privacy Policy</a> <i
+                            class="fa-solid fa-circle mx-2"></i> <a href="/pages/term_condition.html"
+                            class="text-decoration-none">Terms &amp;
+                            Conditions</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="../plugins/aos/js/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <script>
+            let digitValidate = function (ele) {
+                console.log(ele.value);
+                // Only allow numeric input
+                ele.value = ele.value.replace(/[^0-9]/g, '');
+            }
+
+            let tabChange = function (index) {
+                let inputs = document.querySelectorAll('input');
+
+                // If the current input has a value, move focus to the next input
+                if (inputs[index].value !== '') {
+                    // Focus the next input if it exists
+                    if (inputs[index + 1]) {
+                        inputs[index + 1].focus();
+                    }
+                }
+                // If the current input is empty and we're not at the first input, move focus back
+                else if (inputs[index].value === '' && index > 0) {
+                    inputs[index - 1].focus();
+                }
+            }
+        </script>
+    </body>
+
+</html>

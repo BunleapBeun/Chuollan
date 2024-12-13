@@ -19,6 +19,10 @@
 
 /* ! begin of globle class */
 
+.active {
+  color: var(--secondary-orange);
+}
+
 body {
   font-family: "Poppins", serif;
 }
@@ -225,6 +229,15 @@ header {
   border-radius: 10px;
   padding: 10px;
   border: none;
+  position: relative;
+}
+
+.input-search i {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  font-size: 18px;
+  color: gray;
 }
 
 .form-control:focus {
@@ -235,6 +248,79 @@ header {
   box-shadow: none !important;
 }
 
+.acura-img  {
+  width: 60px !important;
+}
+
+.bmw-img {
+  width: 48px !important;
+}
+
+.bugatti-img {
+  width: 50px !important;
+}
+
+.chevrolet-img {
+  width: 60px !important;
+}
+
+.honda-img {
+  width: 50px !important;
+}
+
+.lexus-img {
+  width: 180px !important;
+}
+
+.mer-img {
+  width: 50px !important;
+}
+
+.toyota-img {
+  width: 50px !important;
+}
+
+.most-search-car .card .image-car {
+  height: 300px !important;
+  width: 100%;
+}
+
+.recieve-offer .image-recieve {
+  position: relative;
+  width:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.recieve-offer .image-recieve .image-recieve img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.recieve-offer .play-btn {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background-color: var(--secondary-orange);
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.recieve-offer .play-btn:hover {
+  background-color: var(--secondary-orange-hover);
+}
+
+.recieve-offer .play-btn i {
+  font-size: 40px;
+  color: #fff;
+  text-align: center;
+}
+
 /* ! end of home page */
 
 /* ! begin of sign in */
@@ -243,6 +329,10 @@ header {
   width: 100%;
   height: 100vh;
   background-color: var(--secondary-white);
+}
+
+.form-auth .card {
+  border-radius: 10px;
 }
 
 .form-auth .form-content {
@@ -883,7 +973,443 @@ textarea:focus {
   );
   display: inline-block;
   border-radius: var(--swiper-pagination-bullet-border-radius, 50%);
-  background: var(--swiper-pagination-bullet-inactive-color, #ff851b) !important;
+  background: var(
+    --swiper-pagination-bullet-inactive-color,
+    #ff851b
+  ) !important;
   opacity: var(--swiper-pagination-bullet-inactive-opacity, 0.2);
 }
 /* ! end of pricing */
+
+/* ! begin of forgot password */
+
+.btn-fg {
+  width: 80px;
+  height: 80px;
+  border-radius: 80px;
+  background-color: var(--light-navy);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-fg i {
+  font-size: 40px;
+  color: #fff;
+}
+
+.mb-200 {
+  margin-bottom: 160px;
+}
+
+form .otp {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  outline: none;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 25px;
+}
+
+form .otp:focus {
+  border-color: var(--secondary-orange);
+  background-color: hsla(28, 100%, 55%, 0.1);
+}
+
+/* ! end of forgot password */
+
+/* ! begin of driver rent */
+
+.driver .hero-banner,
+.driver-detail .hero-banner {
+  width: 100%;
+  height: 300px;
+  background: url(/img/driver-rent/hero-banner-driver.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-position-y: 0;
+  background-attachment: fixed;
+}
+
+.driver-list .card {
+  overflow: hidden;
+  border: none;
+}
+
+.driver-list .card .image-driver {
+  width: 100%;
+  height: 350px;
+  position: relative;
+  z-index: 4;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.driver-list .card .image-driver img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.2s ease;
+}
+
+.driver .card:hover img {
+  transform: scale(1.1);
+}
+
+.driver-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(52, 152, 219, 0.5); /* Light blue with 50% opacity */
+  backdrop-filter: blur(10px);
+  position: absolute;
+  bottom: 0px;
+  left: 18%;
+  transition: 0.1s ease;
+  opacity: 0;
+  border-radius: 10px;
+  z-index: 5;
+}
+
+.driver .card:hover .driver-social {
+  bottom: 80px;
+  left: 18%;
+  opacity: 1;
+}
+
+.driver-social li {
+  padding: 0 10px;
+}
+
+.driver-social li a {
+  color: #fff;
+  font-size: 30px;
+}
+
+.driver-social li a:hover {
+  color: var(--secondary-orange);
+}
+
+.driver-info a {
+  color: #000;
+}
+
+.driver-info a:hover {
+  color: var(--secondary-orange);
+}
+
+/* ! end of driver rent */
+
+/* ! begin of driver detail */
+
+.driver-content {
+  overflow: hidden;
+  border-radius: 30px;
+}
+
+.driver-histo .image-driver-histo {
+  width: 100%;
+  height: 600px;
+}
+
+.driver-histo .image-driver-histo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.driver-content ul li {
+  padding: 5px 0;
+}
+
+.driver-content .social-driver {
+  display: flex;
+  margin: 0;
+}
+
+.driver-content .social-driver li {
+  padding-right: 20px;
+}
+
+.driver-content .social-driver li a {
+  font-size: 30px;
+  color: var(--secondary-orange);
+}
+
+.driver-content .social-driver li a:hover {
+  color: var(--secondary-orange-hover);
+}
+
+.feedback-driver {
+  width: 100%;
+  height: auto;
+  /* padding: 30px; */
+  /* background-color: red; */
+}
+
+.feedback-driver .card i {
+  font-size: 50px;
+  color: var(--secondary-orange);
+}
+
+/* ! end of driver detail */
+
+/* ! begin of car loan calculation */
+
+.loan-cal .hero-banner {
+  background-color: var(--light-navy);
+}
+
+.loan-cal .img-hero {
+  border-radius: 30px;
+}
+
+.loan-cal .card {
+  border-radius: 10px;
+  border: none;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.loan-cal .img-hero img {
+  border-radius: 30px;
+}
+
+.cal-banner {
+  display: flex;
+  position: relative;
+}
+
+.cal-banner .img-one {
+  position: relative;
+  padding-right: 100px;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.cal-banner .img-one img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+.cal-banner .img-two {
+  position: absolute;
+  bottom: -110px;
+  right: -30px;
+}
+
+/* ! end of car loan calculation */
+
+/* ! begin of faq */
+
+.faq-main .hero-banner {
+  width: 100%;
+  height: 300px;
+  background: url(/img/faq/hero-banner-faq.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-position-y: -250px;
+  background-attachment: fixed;
+}
+
+.faq .wrapper {
+  width: 100%;
+}
+
+.faq .container-faq {
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  margin: 10px 0;
+}
+
+.question {
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 16px 20px;
+  padding-right: 60px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.question::after {
+  content: "\002B";
+  font-size: 2.2rem;
+  position: absolute;
+  right: 20px;
+  transition: 0.2s;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.question.active::after {
+  transform: rotate(45deg);
+}
+
+.answercont {
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.answer {
+  padding: 0 20px 20px;
+  line-height: 1.5rem;
+}
+
+@media screen and (max-width: 790px) {
+  html {
+    font-size: 14px;
+  }
+
+  .wrapper {
+    width: 80%;
+  }
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  border: 1px solid var(--secondary-orange);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s ease;
+}
+
+.icon i {
+  font-size: 30px;
+  color: var(--secondary-orange);
+  transition: 0.2s ease;
+}
+
+.faq-main .card {
+  border-radius: 10px;
+  border: none;
+  height: 280px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.faq-main .card:hover .icon {
+  background-color: var(--secondary-orange);
+}
+
+.faq-main .card:hover .icon i {
+  color: #fff;
+}
+
+.faq-main .card a i {
+  transform: translateX(-10px);
+  transition: 0.2s ease;
+}
+
+.faq-main .card a:hover i {
+  transform: translateX(0px);
+}
+
+.faq-main .card a:hover i,
+.faq-main .card a:hover span {
+  color: var(--secondary-orange);
+}
+
+/* ! end of faq */
+
+/* ! begin of car listing */
+
+.car-listing .hero-banner {
+  width: 100%;
+  height: 300px;
+  background: url(/img/car-listing/hero-car-listing.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-position-y: -90px;
+  background-attachment: fixed;
+}
+
+.car-content .card {
+  border-radius: 10px;
+}
+
+.car-content .form-check-input {
+  padding: 10px;
+}
+
+.box-status {
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  background-color: rgba(255, 133, 27, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box-status span {
+  color: var(--secondary-orange);
+  font-weight: 500;
+}
+
+.card-car .card {
+  overflow: hidden;
+  border: none;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.card-car .card .image-car {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.card-car .card .image-car img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.2s ease;
+}
+
+.card-car .card:hover .image-car img {
+  transform: scale(1.1);
+}
+
+/* ! end of car listing */
+
+/* ! begin of car detail */
+
+.car-detail .hero-banner {
+  width: 100%;
+  height: 300px;
+  background: url(/img/car-listing/hero-car-listing.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-position-y: -90px;
+  background-attachment: fixed;
+}
+
+.car-detail .booking-side .card {
+  border-radius: 10px;
+  border: none;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.booking-side .image-show .swiper-wrapper {
+  width: 100%;
+  height: auto;
+  background-color: red;
+}
+
+
+/* ! end of car detail */
