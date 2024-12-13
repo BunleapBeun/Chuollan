@@ -1,145 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Responsive Card Slider</title>
-        <link rel="stylesheet" href="/plugins/swiper-js/css/swiper-bundle.min.css" />
-        <link rel="stylesheet" href="/plugins/bootstrap/css/bootstrap-icons.min.css">
-    </head>
-    <style>
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-        body {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: #EFEFEF;
-        }
+  <!-- Demo styles -->
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
 
-        .slide-container {
-            max-width: 1120px;
-            width: 100%;
-            padding: 40px 0;
-        }
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
 
-        .slide-content {
-            margin: 0 40px;
-            overflow: hidden;
-            border-radius: 10px;
-        }
+    .swiper {
+      width: 100%;
+      height: 100%;
+      position: relative; /* Added to enable absolute positioning of buttons */
+    }
 
-        .card {
-            width: 320px;
-            border-radius: 10px !important;
-            background-color: #FFFFFF;
-            padding: 10px;
-        }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
-        .swiper-navBtn {
-            color: #6E93F7 !important;
-            transition: all .3s ease;
-        }
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
 
-        .swiper-navBtn:hover {
-            color: #4070F4 !important;
-        }
+    /* Position the navigation buttons at the bottom */
+    .swiper-button-next,
+    .swiper-button-prev {
+      position: absolute;
+      bottom: 20px !important; /* Adjust to move them lower */
+      z-index: 10 !important; /* Make sure the buttons are on top */
+    }
 
-        .swiper-navBtn::before,
-        .swiper-navBtn::after {
-            font-size: 40px !important;
-        }
+    .swiper-button-next {
+      right: 10px !important; /* Adjust the right position */
+    }
 
-        .swiper-button-next {
-            right: 0 !important;
-        }
+    .swiper-button-prev {
+      left: 10px !important; /* Adjust the left position */
+    }
 
-        .swiper-button-prev {
-            left: 0 !important;
-        }
+    /* Style pagination to ensure it's not affected */
+    .swiper-pagination {
+      position: absolute;
+      bottom: 10px;
+      left: 0;
+      right: 0;
+      z-index: 5;
+      text-align: center;
+    }
+  </style>
+</head>
 
-        .swiper-pagination-bullet {
-            background-color: #6E93F7 !important;
-            opacity: 1 !important;
-        }
+<body>
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">Slide 1</div>
+      <div class="swiper-slide">Slide 2</div>
+      <div class="swiper-slide">Slide 3</div>
+      <div class="swiper-slide">Slide 4</div>
+      <div class="swiper-slide">Slide 5</div>
+      <div class="swiper-slide">Slide 6</div>
+      <div class="swiper-slide">Slide 7</div>
+      <div class="swiper-slide">Slide 8</div>
+      <div class="swiper-slide">Slide 9</div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
 
-        .swiper-pagination-bullet-active {
-            background-color: #4070F4 !important;
-        }
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-        @media screen and (max-width: 768px) {
-            .slide-content {
-                margin: 0 10px;
-            }
-
-            .swiper-navBtn {
-                display: none !important;
-            }
-        }
-
-        .client-pf {
-            width: 70px;
-            height: 70px;
-            border-radius: 70px;
-            overflow: hidden;
-        }
-
-        .client-pf img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        
-    </style>
-
-    <body>
-        <div class="slide-container swiper">
-            <div class="slide-content">
-                <div class="card-wrapper swiper-wrapper">
-                    <div class="card swiper-slide">
-                        <div class="d-flex align-items-center flex-row">
-                            <div class="client-pf">
-                                <img src="/img/about-us/member-image-ex.jpg" alt="">
-                            </div>
-                            <p class="m-0 text-danger">Alex Kase</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="swiper-button-next swiper-navBtn"></div>
-            <div class="swiper-button-prev swiper-navBtn"></div>
-            <div class="swiper-pagination"></div>
-        </div>
-
-        <script src="/plugins/swiper-js/js/swiper-bundle.min.js"></script>
-        <script src="/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <script>
-            var swiper = new Swiper(".slide-content", {
-                slidesPerView: 3,
-                spaceBetween: 25,
-                loop: true,
-                centerSlide: true,
-                fade: true,
-                grabCursor: true,
-                pagination: {
-                    el: ".swiper-pagination",
-                    clickable: true,
-                    dynamicBullets: true,
-                },
-                navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
-                },
-
-                breakpoints: {
-                    0: { slidesPerView: 1, },
-                    520: { slidesPerView: 2 },
-                    950: { slidesPerView: 3 },
-                },
-            })
-        </script>
-    </body>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+</body>
 
 </html>
