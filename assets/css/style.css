@@ -20,7 +20,7 @@
 /* ! begin of globle class */
 
 .active {
-  color: var(--secondary-orange);
+  color: var(--secondary-orange) !important;
 }
 
 body {
